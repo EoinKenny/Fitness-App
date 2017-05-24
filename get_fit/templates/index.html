@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<!--Different libraries-->
+		<link rel="stylesheet" href="./static/style.css">
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--jquery forms library-->
+		<script src="http://malsup.github.com/jquery.form.js"></script>
+		<!--For the Google Chart-->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<!--External JS File-->
+		<script src="./static/script.js"></script>
+
+
+		<title>Get Fit With Eoin ;)</title>
+
+	</head>
+
+	<body>
+		
+		<div id="title" class="title">Make Your Dreams A Reality</div>
+		<img src="./static/title.jpg" class="girl_img">
+		
+		<!--Drop Down Menu-->
+		<ul>
+		  <li><a class="active" href="#home" id="eoin_page">My Story</a></li>
+		  <li><a href="#news" id="form_page">Sign Up To Log Your Workouts</a></li>
+		  <li><a href="#contact" id="charts_page">Members Only - Track Your Progress</a></li>
+		</ul>
+		
+		
+		
+		<!--Eoin Shirtless Page-->
+		<div id="eoin_page_content" class="eoin_page_content"><h1 class="my_story_title">Prepare To Be Inspired Cause I'm Better Than  You, My Six Pack Abs Say So ;)</h1>
+			I used to be a fat slob, I had no hopes in life and my dog got cancer... then I found exercise and everyting became like an X-Factor sob story as I sorted my life out, you too can be amazing like me. I even have a sports car now thanks to exercise and nothing else, seriously.
+			<br><br>
+			Now it's time to make a choice, will you be great the greatest person in the world like me or just another person with a "normal" life ;)
+			<br>
+		<img src="./static/Transformation.jpg" class="img_eoin" id="img">
+		</div>
+			
+		
+
+		<!--Sign up page-->
+		<div id="form_page_content" class="eoin_page_content"><h1>Congratulations, You're Closer To Being As Great As Me Already</h1>
+			<div id="signUp_form" class="form">
+			  <form action="/_sign_up" method="post" id="signUpForm">
+				<label for="firstNameSignUp">First Name</label>
+				<input type="text" id="firstNameSignUp" name="firstNameSignUp" placeholder="Your name..">
+				<label for="lastNameSignUp">Last Name</label>
+				<input type="text" id="lastNameSignUp" name="lastNameSignUp" placeholder="Your last name..">
+				<label for="emailAddressSignUp">Email</label>
+				<input type="text" id="emailAddressSignUp" name="emailAddressSignUp" placeholder="Your email..">
+				<input type="submit" value="Submit" class="button">
+			  </form>
+			</div>
+		</div>
+				
+		
+
+		<!--Log a workout-->
+		<div id="charts_page_content" class="eoin_page_content"><h1>Let's see how you're doing...</h1>
+			<button id="b1" class="button">Log A Workout</button><button id="b2" class="button">Look At My Charts</button></h2>
+			<br><br><hr><br>
+			<div id="log_workout_form">
+			  <form action="/_log_workout" method="post" id="logWorkoutForm">
+				<label for="email_log_workout">Email</label>
+				<input type="text" id="email_log_workout" name="email_log_workout" placeholder="Your email..">
+				
+				<h2>Exercise</h2>
+				  <p>
+				  <input class="w3-radio" type="radio" name="options" id="push_up_log_workout" value="push_ups">
+				  <label>Push Ups</label></p>
+				  <p>
+				  <input class="w3-radio" type="radio" name="options" id="pull_up_log_workout" value="pull_ups">
+				  <label>Pull Ups</label></p>
+				  <p>
+				  <input class="w3-radio" type="radio" name="options" id="squat_log_workout" value="squats">
+				  <label>Squats</label></p>
+				  <p>
+				  <input class="w3-radio" type="radio" name="options" id="leg_raises_log_workout" value="leg_raises">
+				  <label>Leg Raises</label></p>
+				
+				<label for="set1">Set 1</label>
+				<input type="text" id="set1" name="set1" placeholder="set 1...">
+				<label for="set2">Set 2</label>
+				<input type="text" id="set2" name="set2" placeholder="set 2...">
+				<label for="set3">Set 3</label>
+				<input type="text" id="set3" name="set3" placeholder="set 3...">
+				<button id="submit_workout_button" class="button">Submit Workout</button>
+			  </form>
+			</div>
+			
+			
+			
+			
+			<!--Show your chart-->
+			<div id="show_chart_form">
+			  <form id = "showChartForm">
+				<label for="show_chart_email">Email</label>
+				<input type="text" id="show_chart_email" name="show_chart_email" placeholder="Your email..">
+				  <h2>Exercise</h2>
+				  <p>
+				  <input class="w3-radio" type="radio" name="chart_ex_opt" id="push_up_log_workout" value="push_ups">
+				  <label>Push Ups</label></p>
+				  <p>
+				  <input class="w3-radio" type="radio" name="chart_ex_opt" id="pull_up_log_workout" value="pull_ups">
+				  <label>Pull Ups</label></p>
+				  <p>
+				  <input class="w3-radio" type="radio" name="chart_ex_opt" id="squat_log_workout" value="squats">
+				  <label>Squats</label></p>
+				  <p>
+				  <input class="w3-radio" type="radio" name="chart_ex_opt" id="leg_raises_log_workout" value="leg_raises">
+				  <label>Leg Raises</label></p>
+				<button id="b1" class="button">Show/Hide My Progress Charts</button>
+			  </form>
+			</div>
+			
+		</div>
+		<div id="columnchart_material" class="column_chart"></div>
+
+		
+		
+	</body>
+</html>

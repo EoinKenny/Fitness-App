@@ -1,0 +1,169 @@
+.title {
+	padding: 5px;
+    font-size: 50px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+	width: 1409px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+/*The main div on each page*/
+.eoin_page_content {
+	padding: 5px;
+    font-size: 28px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+	width: 1409px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.girl_img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.img_eoin {
+	padding: 50px
+}
+
+/* Drop down menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	width: 1420px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+	width: 472
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.main_title {
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/*For the form*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+	
+}
+
+/*For the Google Chart*/
+.bar_chart {
+	width: 100%;
+	height: 600px;
+	padding: 50px;
+}
+
+.column_chart {
+	height: 700px;
+	width: 1409px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+.my_story_title {
+  padding: 15px 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+/*For the button animations*/
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 5px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
